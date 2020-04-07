@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Movement_Loop_Generator_2._0.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Author" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Auto Generated</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
