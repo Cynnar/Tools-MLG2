@@ -598,7 +598,7 @@ namespace Movement_Loop_Generator_2._0
 
             string script = "--[[\n\tScript Name\t\t:\t" + spawnName + "\n\tScript Purpose\t:\tWaypoint Path for " + spawnName + "\n\tScript Author\t:\t" +
                              locData.Author + "\n\tScript Date\t\t:\t" + dateTime.ToString("MM/dd/yyyy hh:mm:ss tt") + "\n\tScript Notes\t:\tLocations collected from Live\n--]]\n\n" +
-                             "function spawn(NPC)\n\twaypoints(NPC)\nend\n\nfunction hailed(NPC, Spawn)\n\tFaceTarget(NPC, Spawn)\nend\n\nfunction respawn(NPC)\nend\n\n" +
+                             "function spawn(NPC)\n\twaypoints(NPC)\nend\n\nfunction hailed(NPC, Spawn)\n\tFaceTarget(NPC, Spawn)\nend\n\nfunction respawn(NPC)\n\tspawn(NPC)\nend\n\n" +
                              "function waypoints(NPC)";
             streamWriter.WriteLine(script);
 
