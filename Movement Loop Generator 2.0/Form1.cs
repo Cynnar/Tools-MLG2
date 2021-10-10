@@ -114,7 +114,8 @@ namespace Movement_Loop_Generator_2._0
             dataLoc = new List<DataStruct>();
             ResetListView(true);
             // Parse button throws an exception Unhandled if the logfile text box is empty
-            streamReader = new StreamReader(this.textBox_LogFile.Text);
+            var fs = new FileStream(this.textBox_LogFile.Text, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            streamReader = new StreamReader(fs);
             try
             {
                 while ((line = streamReader.ReadLine()) != null)
@@ -235,7 +236,8 @@ namespace Movement_Loop_Generator_2._0
             int index = 0;
             int multipleNPC = 0;
 
-            streamReader = new StreamReader(this.textBox_LogFile.Text);
+            var fs = new FileStream(this.textBox_LogFile.Text, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+            streamReader = new StreamReader(fs);
 
             while ((line = streamReader.ReadLine()) != null)
             {
