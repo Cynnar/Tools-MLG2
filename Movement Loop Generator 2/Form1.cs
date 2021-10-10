@@ -93,7 +93,7 @@ namespace Movement_Loop_Generator_2._0
 
             if (split.Length > 1)
             {
-                npcname_count = Convert.ToInt32(split[1]);
+                npcname = listBox_NPCs.SelectedItem.ToString();
             }
             
 

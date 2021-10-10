@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement Loop Generator 2.0", "Movement Loop Generator 2.0\Movement Loop Generator 2.0.csproj", "{153255FE-C8A9-49FA-B043-8B60A3A48C54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movement Loop Generator 2", "Movement Loop Generator 2\Movement Loop Generator 2.csproj", "{153255FE-C8A9-49FA-B043-8B60A3A48C54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29148882-A6D9-48C4-8943-9FE1CBD99E4F}
 	EndGlobalSection
 EndGlobal
