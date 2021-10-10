@@ -113,7 +113,7 @@ namespace Movement_Loop_Generator_2._0
             int delindex;
             dataLoc = new List<DataStruct>();
             ResetListView(true);
-            // Parse button throws an exception Unhandled if the logfile text box is empty
+
             var fs = new FileStream(this.textBox_LogFile.Text, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
             streamReader = new StreamReader(fs);
             try
