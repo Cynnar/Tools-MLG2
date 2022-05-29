@@ -195,7 +195,11 @@ namespace Movement_Loop_Generator_2._0
                                 locData.YLoc = y;
                                 locData.ZLoc = z;
 
-                                if (setSpeed > 0)
+                                if (textBox_Speed.Text != "")
+                                {
+                                    locData.Speed = Convert.ToInt32(textBox_Speed.Text);
+                                }
+                                else if (setSpeed > 0)
                                 {
                                     locData.Speed = setSpeed;
                                     setSpeed = 0;
@@ -204,8 +208,11 @@ namespace Movement_Loop_Generator_2._0
                                 {
                                     locData.Speed = 2;
                                 }
-
-                                if (setDelay > 0)
+                                if (textBox_Delay.Text != "")
+                                {
+                                    locData.Delay = Convert.ToInt32(textBox_Delay.Text);
+                                }
+                                else if (setDelay > 0)
                                 {
                                     locData.Delay = setDelay;
                                     setDelay = 0;
@@ -718,6 +725,15 @@ namespace Movement_Loop_Generator_2._0
                             "File->Settings->Author and edit in the textbox" + System.Environment.NewLine +
                             "Hit enter to save.", "Loading Logs", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+        private void overrideSpeedDelayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Use the browse button in the generator to locate your log." + System.Environment.NewLine +
+                            "these are located in your EverQuest II->logs folder inside the folder of your live client." + System.Environment.NewLine +
+                            System.Environment.NewLine +
+                            "Enter the desired value in the box for speed, or delay." + System.Environment.NewLine +
+                            "Double click your spawn from the list on the left",
+                            "Override Default Speed/Delay Values", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         // This loads the saved settings for Author into the toolStripTextBox
         private void authorToolStripMenuItem_MouseEnter(object sender, EventArgs e)
@@ -753,6 +769,8 @@ namespace Movement_Loop_Generator_2._0
             int total_wapoints = dataLoc.Count;
             richTextBox_OutputView.Text = richTextBox_OutputView.Text + "\n\n\n" + total_wapoints + " Waypoints were loaded\n\nClick a waypoint to edit it in the boxes below";
         }
+
+        
 
         /*********************************************************************************************************************************
          *                                               Notes

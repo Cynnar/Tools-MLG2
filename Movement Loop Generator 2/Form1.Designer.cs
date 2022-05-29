@@ -76,6 +76,7 @@
             this.button_ParseDetalis = new System.Windows.Forms.Button();
             this.listBox_NPCs = new System.Windows.Forms.ListBox();
             this.button_InsertAbove = new System.Windows.Forms.Button();
+            this.overrideSpeedDelayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +131,7 @@
             // toolStripTextBox_Author
             // 
             this.toolStripTextBox_Author.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.toolStripTextBox_Author.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox_Author.Name = "toolStripTextBox_Author";
             this.toolStripTextBox_Author.Size = new System.Drawing.Size(100, 23);
             this.toolStripTextBox_Author.KeyDown += new System.Windows.Forms.KeyEventHandler(this.toolStripTextBoxAuthor_KeyDown);
@@ -145,29 +147,30 @@
             this.howToUseToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.collectWaypointsToolStripMenuItem,
             this.loadingLogsToolStripMenuItem,
-            this.useGeneratorToolStripMenuItem});
+            this.useGeneratorToolStripMenuItem,
+            this.overrideSpeedDelayToolStripMenuItem});
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.howToUseToolStripMenuItem.Text = "How To";
             // 
             // collectWaypointsToolStripMenuItem
             // 
             this.collectWaypointsToolStripMenuItem.Name = "collectWaypointsToolStripMenuItem";
-            this.collectWaypointsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.collectWaypointsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.collectWaypointsToolStripMenuItem.Text = "Collecting locations";
             this.collectWaypointsToolStripMenuItem.Click += new System.EventHandler(this.collectWaypointsToolStripMenuItem_Click);
             // 
             // loadingLogsToolStripMenuItem
             // 
             this.loadingLogsToolStripMenuItem.Name = "loadingLogsToolStripMenuItem";
-            this.loadingLogsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.loadingLogsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.loadingLogsToolStripMenuItem.Text = "Loading logs";
             this.loadingLogsToolStripMenuItem.Click += new System.EventHandler(this.loadingLogsToolStripMenuItem_Click);
             // 
             // useGeneratorToolStripMenuItem
             // 
             this.useGeneratorToolStripMenuItem.Name = "useGeneratorToolStripMenuItem";
-            this.useGeneratorToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.useGeneratorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.useGeneratorToolStripMenuItem.Text = "Editing locations";
             this.useGeneratorToolStripMenuItem.Click += new System.EventHandler(this.editinglogsToolStripMenuItem_Click);
             // 
@@ -496,6 +499,13 @@
             this.button_InsertAbove.UseVisualStyleBackColor = true;
             this.button_InsertAbove.Click += new System.EventHandler(this.button_InsertAbove_Click);
             // 
+            // overrideSpeedDelayToolStripMenuItem
+            // 
+            this.overrideSpeedDelayToolStripMenuItem.Name = "overrideSpeedDelayToolStripMenuItem";
+            this.overrideSpeedDelayToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.overrideSpeedDelayToolStripMenuItem.Text = "Override Speed/Delay";
+            this.overrideSpeedDelayToolStripMenuItem.Click += new System.EventHandler(this.overrideSpeedDelayToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -592,6 +602,7 @@
         private System.Windows.Forms.ToolStripMenuItem reversePathToolStripMenuItem;
         private System.Windows.Forms.ListBox listBox_NPCs;
         private System.Windows.Forms.Button button_InsertAbove;
+        private System.Windows.Forms.ToolStripMenuItem overrideSpeedDelayToolStripMenuItem;
     }
 }
 
